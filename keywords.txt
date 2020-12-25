@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map For ESP-Logger
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Logger		KEYWORD1
+LoggerLevel	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setPrintPrefix	KEYWORD2
+setLevel	KEYWORD2
+unlock	KEYWORD2
+
+none	KEYWORD2
+error	KEYWORD2
+warning	KEYWORD2
+info	KEYWORD2
+debug	KEYWORD2
+verbose	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+NONE	LITERAL1
+ERROR	LITERAL1
+WARNING	LITERAL1
+INFO	LITERAL1
+DEBUG	LITERAL1
+VERBOSE	LITERAL1
