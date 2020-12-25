@@ -53,6 +53,16 @@ Logger& Logger::internPrint(const char* str, LoggerLevel level)
     return *this;
 }
 
+Logger& Logger::internPrintln(const char* str, LoggerLevel level)
+{
+    if (checkBlocking(level))
+        return *this;
+    print(LevelPrefixes[level]);
+    printPrefix();
+    println(str);
+    return *this;
+}
+
 Logger& Logger::none(const char* str)
 {
     return internPrint(str, NONE);
@@ -77,6 +87,33 @@ Logger& Logger::verbose(const char* str)
 {
     return internPrint(str, VERBOSE);
 }
+
+
+Logger& Logger::noneln(const char* str)
+{
+    return internPrintln(str, NONE);
+}
+Logger& Logger::errorln(const char* str)
+{
+    return internPrintln(str, ERROR);
+}
+Logger& Logger::warningln(const char* str)
+{
+    return internPrintln(str, WARNING);
+}
+Logger& Logger::infoln(const char* str)
+{
+    return internPrintln(str, INFO);
+}
+Logger& Logger::debugln(const char* str)
+{
+    return internPrintln(str, DEBUG);
+}
+Logger& Logger::verboseln(const char* str)
+{
+    return internPrintln(str, VERBOSE);
+}
+
 
 
 size_t Logger::write(uint8_t c)

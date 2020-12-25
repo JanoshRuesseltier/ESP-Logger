@@ -31,6 +31,7 @@ private:
     bool checkBlocking(LoggerLevel level);
     void printPrefix();
     Logger& internPrint(const char* str, LoggerLevel level);
+    Logger& internPrintln(const char* str, LoggerLevel level);
 
     char const* LevelPrefixes[6] = {
         "",
@@ -50,12 +51,19 @@ public:
     void setLevel(LoggerLevel level);
     void unlock();
 
-    Logger& none(const char* str);
-    Logger& error(const char* str);
-    Logger& warning(const char* str);
-    Logger& info(const char* str);
-    Logger& debug(const char* str);
-    Logger& verbose(const char* str);
+    Logger& none(const char* str = "");
+    Logger& error(const char* str = "");
+    Logger& warning(const char* str = "");
+    Logger& info(const char* str = "");
+    Logger& debug(const char* str = "");
+    Logger& verbose(const char* str = "");
+
+    Logger& noneln(const char* str = "");
+    Logger& errorln(const char* str = "");
+    Logger& warningln(const char* str = "");
+    Logger& infoln(const char* str = "");
+    Logger& debugln(const char* str = "");
+    Logger& verboseln(const char* str = "");
 
     size_t write(uint8_t);
     size_t write(char);

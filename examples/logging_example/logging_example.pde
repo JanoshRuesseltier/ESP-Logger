@@ -37,6 +37,7 @@ void setup() {
   int tempInt = 404;
   logger.error("This is a big mess: ") << tempInt << endl;
   logger.info("This message part is stored in the RAM - ") << F("this part is sored in the flash.") << endl;
+  logger.info() << "This is a test information" <<endl;
 
   //change the filter level
   logger.setLevel(ERROR);
