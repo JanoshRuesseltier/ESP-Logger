@@ -1,0 +1,42 @@
+{
+	"name": "LevelLogger",
+	"keywords": "LevelLogger, Logger, Level, ArduinoLogger",
+	"description": "A library for sending log messages over the serial connection of Arduino based microcontrollers.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JanoshRuesseltier/LevelLogger",
+		"branch": "master"
+	},
+	"authors": [
+		{
+			"maintainer": true,
+			"name": "Jan Benner",
+			"url": "https://github.com/JanoshRuesseltier",
+			"email": "info@jben.de"
+		}
+	],
+	"dependencies": [
+		{
+			"name": "Streaming",
+			"authors": "Mikal Hart",
+			"frameworks": "arduino"
+		}
+	],
+	"frameworks": "arduino",
+	"platforms": [
+		"atmelavr",
+		"atmelmegaavr",
+		"atmelsam",
+		"espressif32",
+		"espressif8266",
+		"infineonxmc",
+		"kendryte210",
+		"gd32v",
+		"ststm32",
+		"asrmicro650x",
+		"nordicnrf51",
+		"nordicnrf52",
+		"teensy"
+	],
+	"version": "1.0.0"
+}
