@@ -1,6 +1,16 @@
 # ESP-Logger
 A library for sending log messages over the serial connection of Arduino based microcontrollers.
 
+
+## Features
+* Intuitive usage
+* Several log levels (Error, Warning, Info, Trace, Verbose)
+* Filtering output level (e.g. warnings or higher)
+* Logging using the IO Streams style (`<<`)
+* Name for loggers
+* Displays a prefix of the logging level and the name of the logger
+* Supports all kind of Print output
+
 ## Examples
 You can find more examples [here](https://github.com/JanoshRuesseltier/ESP-Logger/tree/main/examples/logging_example)
 
