@@ -22,21 +22,8 @@
 			"frameworks": "arduino"
 		}
 	],
+	"license": "LGPL-2.1-or-later",
 	"frameworks": "arduino",
-	"platforms": [
-		"atmelavr",
-		"atmelmegaavr",
-		"atmelsam",
-		"espressif32",
-		"espressif8266",
-		"infineonxmc",
-		"kendryte210",
-		"gd32v",
-		"ststm32",
-		"asrmicro650x",
-		"nordicnrf51",
-		"nordicnrf52",
-		"teensy"
-	],
+	"platforms": "*",
 	"version": "1.0.0"
 }
